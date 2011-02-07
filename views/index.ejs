@@ -1,0 +1,20 @@
+<%- form %>
+<%- status %>
+<% if( list.length ) { %>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>名前</th>
+				<th>コメント</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% list.forEach(function(item){ %>
+				<tr>
+					<td><%= item.name %></td>
+					<td><%= item.comment %></td>
+				</tr>
+			<% }) %>
+		</tbody>
+	</table>
+<% } %>
